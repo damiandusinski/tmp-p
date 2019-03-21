@@ -22,7 +22,10 @@ header {
 
 /*=========================================> start logo in header */
 
-.logo-container {}
+.logo-container {
+    width: 84px;
+    margin: 25px auto 0 auto;
+}
 
 /*=========================================> end logo in header */
 
@@ -58,7 +61,7 @@ header {
 /*=========================================> end hero in header */
 
 /*=========================================> start scroll icon in header */
-.head-scroll-icon {
+.scroll-container {
     position: absolute;
     bottom: 5%;
     left: 50%;
