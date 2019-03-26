@@ -4,18 +4,24 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*=========================================> start html */
 html {
     font-size: 10px;
     font-family: 'Source Sans Pro', sans-serif;
+    color: #777;
 }
 
 /*=========================================> start header */
-header {
+header,
+footer {
     position: relative;
     height: 100vh;
     padding: 25px;
-    background: linear-gradient(to right, rgba(9, 82, 114, 0.7), rgba(9, 82, 114, 0.7)), url(img/4.jpg) no-repeat center;
+    background: linear-gradient(to right, rgba(9, 82, 114, 0.7), rgba(9, 82, 114, 0.7)), url(img/hero.jpg) no-repeat center;
     background-size: cover;
     color: #fff;
 }
@@ -26,6 +32,7 @@ header {
     width: 84px;
     margin: 25px auto 0 auto;
 }
+
 
 /*=========================================> end logo in header */
 
@@ -67,4 +74,155 @@ header {
     left: 50%;
     transform: translateX(-50%);
     font-size: 4rem;
+}
+
+/*=========================================> end scroll icon in header */
+/*=========================================> start section style for all */
+.section-text-container {
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.secion-main-text {
+    padding: 0 20px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #777;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/*=========================================> end section style for all */
+/*=========================================> start about-me and co-founder */
+
+.head-number {
+    line-height: 0.8;
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-weight: 400;
+    color: #777;
+}
+
+.head-number::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 1.5px;
+    background-color: #095272;
+}
+
+.section-main-head {
+    padding: 15px 0 10px 0;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #095272;
+    line-height: 1;
+}
+
+span.section-main-head-span {
+    color: #999;
+}
+
+
+
+/*=========================================> end about-me and co-founder */
+/*=========================================> start portfolio */
+
+.portfolio .section-text-container h1 span {
+    position: relative;
+}
+
+.portfolio .section-text-container h1 span::after {
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%;
+    height: 1.5px;
+    background-color: #095272;
+    z-index: -1;
+}
+
+.portfolio-quote {
+    margin-top: 100px;
+    text-align: center;
+    color: #095272;
+    font-size: 18px;
+}
+
+.quote-span {
+    color: #777;
+}
+
+/*=========================================> end portfolio */
+/*=========================================> start contact */
+
+.btn-contact {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+    background-image: linear-gradient(110deg, #095272 0%, #095272 12%, white 13%, white);
+    color: #095272;
+}
+
+.social-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-head {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #095272;
+    font-size: 1.5rem;
+
+}
+
+.social-box-icons {
+    width: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.social-box-icons i {
+    font-size: 1.8rem;
+}
+
+/*=========================================> end contact */
+/*=========================================> start footer */
+footer {
+    position: relative;
+    height: 200px;
+}
+
+footer .logo-container {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
 }
