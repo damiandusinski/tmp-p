@@ -10,6 +10,14 @@ a {
 
 .wrapper {
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /*=========================================> start html */
@@ -186,6 +194,55 @@ img {
     background-color: #095272;
 }
 
+.head-number::before {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    background-color: #095272;
+}
+
+/* media number */
+@media (min-width:700px) {
+
+    .head-number {
+        text-align: center;
+    }
+
+    .about-me .head-number::before {
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+
+    .about-me .head-number::after {
+        top: 50%;
+        left: 60%;
+        transform: translateY(-50%);
+        transform: rotate(-45deg);
+        width: 30px;
+    }
+
+    .co-founder .head-number::after {
+
+        top: 50%;
+        right: 0;
+        left: auto;
+        transform: translateY(-50%);
+        width: 40%;
+
+    }
+
+    .co-founder .head-number::before {
+        top: 50%;
+        left: auto;
+        right: 60%;
+        transform: translateY(-50%);
+        transform: rotate(45deg);
+        width: 30px;
+    }
+}
+
 .section-main-head {
     padding: 15px 0 10px 0;
     font-size: 3rem;
@@ -297,6 +354,20 @@ span.section-main-head-span {
 
     .social-box {
         flex-basis: 50%;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .social-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 60px 20px 60px;
+    }
+
+    .social-box {
+        flex-basis: 25%;
     }
 
 }
