@@ -26,13 +26,14 @@
             </div>
             <!-- add icon form project -->
             <div class="scroll-container">
-                <img class="scroll" src="img/Scroll Down.png" alt="scroll">
+                <a class="scrollTo" href="index.html#about"><img class="scroll" src="img/Scroll Down.png"
+                        alt="scroll"></a>
             </div>
         </header>
         <!-- main start -->
         <main>
             <!-- about-me start -->
-            <section class="about-me flex-container">
+            <section id="about" class="about-me flex-container">
                 <div class="section-text-container">
                     <p class="head-number">01</p>
                     <h1 class="section-main-head">Design consultant
@@ -141,6 +142,15 @@
         </footer>
         <!-- footer end -->
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('.scrollTo').click(function () {
+            $('html, body').animate({
+                scrollTop: $('#about').offset().top
+            }, 750);
+            return false;
+        });
+    </script>
 </body>
 
 </html>
